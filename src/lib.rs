@@ -101,6 +101,11 @@
 //! // This fails because the "empty" field is not visible to the outer module
 //! let empty = field!(empty @ example::Empty);
 //! ```
+//!
+//! # Dependencies
+//!
+//! This crate is completely dependency-free.
+//! `#[no_std]` is also supported by default.
 
 #![warn(missing_docs)]
 #![no_std]
