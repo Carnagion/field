@@ -7,6 +7,6 @@ authors = ["Indraneel Mahendrakumar"]
 repository = "https://github.com/Carnagion/field"
 documentation = "https://docs.rs/field"
 readme = "README.md"
-license = "MIT OR Apache-2.0"
+license = "MIT"
 keywords = ["macro", "field", "struct", "name"]
 categories = ["no-std", "rust-patterns"]
