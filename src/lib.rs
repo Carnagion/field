@@ -120,3 +120,34 @@ macro_rules! field {
         ::core::stringify!($field)
     }};
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn normal() {
+        struct Int {
+            int: i32,
+        }
+
+        let int = field!(int @ Int);
+        assert_eq!(int, "int");
+    }
+
+    #[test]
+    fn generic() {
+        struct Wrap<T> {
+            inner: T,
+        }
+
+        let inner = field!(inner @ Wrap<()>);
+        assert_eq!(inner, "inner");
+    }
+
+    // #[test]
+    // fn fails() {
+    //     struct Foo {
+    //         bar: usize,
+    //     }
+    //     let _ = field!(baz @ Foo);
+    // }
+}
