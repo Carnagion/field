@@ -1,4 +1,12 @@
 [package]
 name = "field"
+description = "Statically-verified struct field names as strings."
 version = "0.1.0"
 edition = "2021"
+authors = ["Indraneel Mahendrakumar"]
+repository = "https://github.com/Carnagion/field"
+documentation = "https://docs.rs/field"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["macro", "field", "struct", "name"]
+categories = ["no-std", "rust-patterns"]
