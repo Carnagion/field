@@ -1,3 +1,8 @@
+// Copyright 2023 Indraneel Mahendrakumar.
+//
+// Licensed under either of MIT (https://opensource.org/license/mit/) or Apache 2.0 (https://opensource.org/license/apache-2-0/), at your option.
+// This file may not be copied, modified, or distributed except according to those terms.
+
 //! Statically-verified `struct` field names as strings.
 //!
 //! The [`field!`] macro evaluates to a field's name after verifying that the field exists on the specified `struct`.
