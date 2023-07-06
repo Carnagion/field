@@ -103,6 +103,7 @@
 //! ```
 
 #![warn(missing_docs)]
+#![no_std]
 
 /// Checks for the presence of a field on a `struct` at compile-time and returns the field's name as a `&'static str`.
 ///
